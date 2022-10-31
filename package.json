@@ -1,0 +1,64 @@
+{
+  "name": "all-kit-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.2.7",
+    "@fortawesome/fontawesome-free": "^6.0.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@types/node": "^12.19.6",
+    "@types/react": "^16.14.1",
+    "@types/react-dom": "^16.9.10",
+    "@types/react-helmet": "^6.1.0",
+    "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.0.2",
+    "axios": "^0.25.0",
+    "graphql": "^15.4.0",
+    "history": "^4.10.1",
+    "postcss": "^8.1.9",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "react-helmet-async": "^1.2.3",
+    "react-hook-form": "^6.11.4",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.0-next.98",
+    "rimraf": "^3.0.2",
+    "tailwindcss": "^2.0.1",
+    "typescript": "^4.1.2",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "tailwind:build": "tailwind build ./src/styles/tailwind.css -o ./src/styles/styles.css",
+    "start": "export PORT=4000 && npm run apollo:codegen & npm run tailwind:build & react-scripts start",
+    "apollo:codegen": " rimraf src/__generated__ && apollo client:codegen src/__generated__ --target=typescript --outputFlat",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "apollo": "^2.33.10",
+    "mock-apollo-client": "^1.0.0"
+  }
+}

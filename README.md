@@ -26,4 +26,4 @@
 
 오픈소스 웹개발 해커톤 __은상__
 
-<img width="300" src="https://user-images.githubusercontent.com/81840814/200182952-5302f8dc-6ea9-4eb9-b809-6af2a6fee764.jpg">
+<img width="370" src="https://user-images.githubusercontent.com/81840814/200182952-5302f8dc-6ea9-4eb9-b809-6af2a6fee764.jpg">
